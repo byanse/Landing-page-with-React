@@ -3,7 +3,7 @@ const Navbar = (props) => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
       <div className="container">
         <a className="navbar-brand" href="#">
-          Start Bootstrap
+          {props.titulo}
         </a>
         <button
           className="navbar-toggler"
@@ -19,16 +19,16 @@ const Navbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ml-auto">
             <a className="nav-link active" href="#">
-              Home <span className="sr-only">(current)</span>
+              {props.home} <span className="sr-only">(current)</span>
             </a>
             <a className="nav-link" href="#">
-              About
+              {props.about}
             </a>
             <a className="nav-link" href="#">
-              Services
+              {props.services}
             </a>
             <a className="nav-link" href="#">
-              Contact
+              {props.contact}
             </a>
           </div>
         </div>
