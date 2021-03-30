@@ -1,18 +1,26 @@
-import Jumbotron from './componentes/Jumbotron'
+import Jumbotron from './componentes/Jumbotron';
+import Navbar from "./componentes/Navbar";
 function App() {
-  return (
-      <>
-        <Jumbotron username = "Welcome"/>
-    <div className="container">
-      <div className="row">
-     <div className="col-md-12">
+    let objectNavbar = {
+        titulo: "Start Booststrap",
+        home: "Home",
+        about: "About",
+        services: "Services",
+        contact: "Contact",
+    };
+    return (
+        <>
 
-       </div>
-      </div>
-    </div>
-</>
-    
-  );
+            <Navbar
+                titulo={objectNavbar.titulo}
+                home={objectNavbar.home}
+                about={objectNavbar.about}
+                services={objectNavbar.services}
+                contact={objectNavbar.contact}
+            />
+            <Jumbotron username="Welcome" />
+        </>
+    );
 }
 
 export default App;
