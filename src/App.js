@@ -1,6 +1,7 @@
 import Jumbotron from "./componentes/Jumbotron";
 import Navbar from "./componentes/Navbar";
 import Card from "./componentes/Card";
+import Footer from "./componentes/Footer";
 function App() {
   let data = [
     {
@@ -72,6 +73,7 @@ function App() {
           })}
         </div>
       </div>
+      <Footer/>
     </>
 
   );
