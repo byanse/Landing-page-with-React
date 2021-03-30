@@ -2,41 +2,8 @@ import Jumbotron from "./componentes/Jumbotron";
 import Navbar from "./componentes/Navbar";
 import Card from "./componentes/Card";
 import Footer from "./componentes/Footer";
+
 function App() {
-  let data = [
-    {
-      imgenUrl: "https://picsum.photos/id/237/400/300",
-      imgenAlt: "perro",
-      title: "Soy un Perro",
-      cardBody: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      btnUrl: "#",
-      btnLabel: "Go somewhere"
-    },
-    {
-      imgenUrl: "https://picsum.photos/id/236/400/300",
-      imgenAlt: "perro",
-      title: "Soy un Perro",
-      cardBody: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      btnUrl: "#",
-      btnLabel: "Go somewhere"
-    },
-    {
-      imgenUrl: "https://picsum.photos/id/238/400/300",
-      imgenAlt: "perro",
-      title: "Soy un Perro",
-      cardBody: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      btnUrl: "#",
-      btnLabel: "Go somewhere"
-    },
-    {
-      imgenUrl: "https://picsum.photos/id/235/400/300",
-      imgenAlt: "perro",
-      title: "Soy un Perro",
-      cardBody: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      btnUrl: "#",
-      btnLabel: "Go somewhere"
-    },
-  ]
   let objectNavbar = {
     titulo: "Start Booststrap",
     home: "Home",
@@ -44,6 +11,51 @@ function App() {
     services: "Services",
     contact: "Contact",
   };
+
+  let data = [
+    {
+      imgenUrl: "https://picsum.photos/id/237/400/300",
+      imgenAlt: "perro",
+      title: "Soy un Perro",
+      cardBody:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      btnUrl: "#",
+      btnLabel: "Go somewhere",
+    },
+    {
+      imgenUrl: "https://picsum.photos/id/236/400/300",
+      imgenAlt: "perro",
+      title: "Soy un Perro",
+      cardBody:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      btnUrl: "#",
+      btnLabel: "Go somewhere",
+    },
+    {
+      imgenUrl: "https://picsum.photos/id/238/400/300",
+      imgenAlt: "perro",
+      title: "Soy un Perro",
+      cardBody:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      btnUrl: "#",
+      btnLabel: "Go somewhere",
+    },
+    {
+      imgenUrl: "https://picsum.photos/id/235/400/300",
+      imgenAlt: "perro",
+      title: "Soy un Perro",
+      cardBody:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      btnUrl: "#",
+      btnLabel: "Go somewhere",
+    },
+  ];
+
+  let footerProps = {
+    tituloFooter: "Copyright",
+    webSite: "your website 2019",
+  };
+
   return (
     <>
       <Navbar
@@ -58,9 +70,9 @@ function App() {
         <div className="row">
           {data.map((item, index) => {
             return (
-
               <div key={index} className="col-3">
-                <Card imgenUrl={item.imgenUrl}
+                <Card
+                  imgenUrl={item.imgenUrl}
                   imgenAlt={item.imgenAlt}
                   title={item.title}
                   cardBody={item.cardBody}
@@ -68,14 +80,15 @@ function App() {
                   btnLabel={item.btnLabel}
                 />
               </div>
-
-            )
+            );
           })}
         </div>
       </div>
-      <Footer/>
+      <Footer
+        tituloFooter={footerProps.tituloFooter}
+        webSite={footerProps.webSite}
+      />
     </>
-
   );
 }
 
