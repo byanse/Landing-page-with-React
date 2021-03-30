@@ -4,7 +4,7 @@ function Card(props) {
 
     
     const cardstyle = {
-        "width": "18rem",
+        "width": "100%",
     }
     return (
 
