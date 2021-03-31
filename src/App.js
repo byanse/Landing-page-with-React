@@ -27,7 +27,7 @@ function App() {
         <div className="row">
           {data.map((item, index) => {
             return (
-              <div key={index} className="col-3">
+              <div key={index} className="col-lg-3 col-md-3 col-sm-12">
                 <Card
                   imgenUrl={item.imgenUrl}
                   imgenAlt={item.imgenAlt}
