@@ -3,7 +3,7 @@ import Navbar from "./componentes/Navbar";
 import Card from "./componentes/Card";
 import Footer from "./componentes/Footer";
 import {data} from "./data.js";
-import {footer} from "./footer";
+
 
 function App() {
   let objectNavbar = {
