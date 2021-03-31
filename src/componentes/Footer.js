@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 const Footer = (props) => {
   return (
     <footer id="footer" className="bg-dark ">
@@ -8,9 +7,5 @@ const Footer = (props) => {
     </footer>
   );
 };
-Footer.propTypes = {
-	tituloFooter: PropTypes.string,
-    webSite: PropTypes.string,
-}    
 
 export default Footer;
