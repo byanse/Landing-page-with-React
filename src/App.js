@@ -2,7 +2,8 @@ import Jumbotron from "./componentes/Jumbotron";
 import Navbar from "./componentes/Navbar";
 import Card from "./componentes/Card";
 import Footer from "./componentes/Footer";
-import {data} from "./data.js"
+import {data} from "./data.js";
+import {footer} from "./footer";
 
 function App() {
   let objectNavbar = {
@@ -12,11 +13,6 @@ function App() {
     services: "Services",
     contact: "Contact",
   };
-  let footerProps = {
-    tituloFooter: "Copyright",
-    webSite: "your website 2019",
-  };
-
   return (
     <>
       <Navbar
@@ -45,9 +41,7 @@ function App() {
           })}
         </div>
       </div>
-      <Footer
-        tituloFooter={footerProps.tituloFooter}
-        webSite={footerProps.webSite}
+      <Footer tituloFooter="Copyright" webSite="your website 2019"
       />
     </>
   );
