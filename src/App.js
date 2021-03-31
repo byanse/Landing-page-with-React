@@ -2,8 +2,7 @@ import Jumbotron from "./componentes/Jumbotron";
 import Navbar from "./componentes/Navbar";
 import Card from "./componentes/Card";
 import Footer from "./componentes/Footer";
-import {data} from "./data.js";
-
+import { data } from "./componentes/data.js";
 
 function App() {
   let objectNavbar = {
@@ -27,16 +26,14 @@ function App() {
         <div className="row">
           {data.map((item, index) => {
             return (
-              <div key={index} className="col-lg-3 col-md-3 col-sm-12">
-                <Card
-                  imgenUrl={item.imgenUrl}
-                  imgenAlt={item.imgenAlt}
-                  title={item.title}
-                  cardBody={item.cardBody}
-                  btnUrl={item.btnUrl}
-                  btnLabel={item.btnLabel}
-                />
-              </div>
+              <Card  key={index}
+                imgenUrl={item.imgenUrl}
+                imgenAlt={item.imgenAlt}
+                title={item.title}
+                cardBody={item.cardBody}
+                btnUrl={item.btnUrl}
+                btnLabel={item.btnLabel}
+              />
             );
           })}
         </div>
